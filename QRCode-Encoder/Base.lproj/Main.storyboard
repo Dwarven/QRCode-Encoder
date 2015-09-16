@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,8 +16,70 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://github.com/Dwarven/QRCode-Encoder" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vEg-m4-Zhz">
+                                <rect key="frame" x="16" y="40" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CnG-EC-9FN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="She-ID-Ojc">
+                                <rect key="frame" x="150" y="180" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Jue-Yh-WfY"/>
+                                    <constraint firstAttribute="width" constant="300" id="da9-f7-4Bh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVa-az-eH4">
+                                <rect key="frame" x="16" y="78" width="568" height="30"/>
+                                <color key="backgroundColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="423-Ww-IOB"/>
+                                    <constraint firstAttribute="height" constant="30" id="eae-jq-cV6"/>
+                                    <constraint firstAttribute="width" constant="70" id="gWW-Mb-6Xg"/>
+                                </constraints>
+                                <state key="normal" title="Update">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="423-Ww-IOB"/>
+                                        <exclude reference="gWW-Mb-6Xg"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="update:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ilt-rs-t8s"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AVa-az-eH4" firstAttribute="top" secondItem="vEg-m4-Zhz" secondAttribute="bottom" constant="8" id="7xL-wl-Vp2"/>
+                            <constraint firstItem="AVa-az-eH4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Jb0-wV-9gr"/>
+                            <constraint firstAttribute="centerY" secondItem="She-ID-Ojc" secondAttribute="centerY" constant="-30" id="LuN-wh-Rez"/>
+                            <constraint firstAttribute="centerX" secondItem="She-ID-Ojc" secondAttribute="centerX" id="QgL-Dp-pof"/>
+                            <constraint firstAttribute="trailing" secondItem="AVa-az-eH4" secondAttribute="trailing" constant="16" id="flT-G3-NXG"/>
+                            <constraint firstItem="AVa-az-eH4" firstAttribute="leading" secondItem="vEg-m4-Zhz" secondAttribute="trailing" constant="8" id="fqT-bb-yzb"/>
+                            <constraint firstAttribute="trailing" secondItem="AVa-az-eH4" secondAttribute="trailing" constant="16" id="mbt-FG-7ES"/>
+                            <constraint firstItem="AVa-az-eH4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="o1l-9T-5ji"/>
+                            <constraint firstItem="vEg-m4-Zhz" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="pog-he-k74"/>
+                            <constraint firstItem="vEg-m4-Zhz" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="t1X-uA-Ocp"/>
+                            <constraint firstAttribute="trailing" secondItem="vEg-m4-Zhz" secondAttribute="trailing" constant="16" id="zDR-9k-kaT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="flT-G3-NXG"/>
+                                <exclude reference="fqT-bb-yzb"/>
+                                <exclude reference="o1l-9T-5ji"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="She-ID-Ojc" id="zNy-Kt-awf"/>
+                        <outlet property="textField" destination="vEg-m4-Zhz" id="0MJ-yD-GiH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

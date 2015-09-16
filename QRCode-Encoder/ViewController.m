@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIImage+DYQRCodeEncoder.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self update:nil];
+}
+
+- (IBAction)update:(id)sender {
+    [self.view endEditing:YES];
+    //[_imageView setImage:[UIImage DY_QRCodeImageWithString:_textField.text size:(CGFloat)_textField.bounds.size.width]];
+    [_imageView setImage:[UIImage DY_QRCodeImageWithString:_textField.text size:(CGFloat)_textField.bounds.size.width color:[UIColor darkGrayColor]]];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

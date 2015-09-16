@@ -14,6 +14,7 @@
 		DF2C460B1BA9528C0093675F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2C460A1BA9528C0093675F /* Images.xcassets */; };
 		DF2C460E1BA9528C0093675F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF2C460C1BA9528C0093675F /* LaunchScreen.xib */; };
 		DF2C461A1BA9528C0093675F /* QRCode_EncoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2C46191BA9528C0093675F /* QRCode_EncoderTests.m */; };
+		DF2C46261BA953AD0093675F /* UIImage+DYQRCodeEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2C46251BA953AD0093675F /* UIImage+DYQRCodeEncoder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		DF2C46131BA9528C0093675F /* QRCode-EncoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QRCode-EncoderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2C46181BA9528C0093675F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF2C46191BA9528C0093675F /* QRCode_EncoderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCode_EncoderTests.m; sourceTree = "<group>"; };
+		DF2C46241BA953AD0093675F /* UIImage+DYQRCodeEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DYQRCodeEncoder.h"; sourceTree = "<group>"; };
+		DF2C46251BA953AD0093675F /* UIImage+DYQRCodeEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DYQRCodeEncoder.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		DF2C45F11BA9528C0093675F = {
 			isa = PBXGroup;
 			children = (
+				DF2C46231BA9538A0093675F /* Class */,
 				DF2C45FC1BA9528C0093675F /* QRCode-Encoder */,
 				DF2C46161BA9528C0093675F /* QRCode-EncoderTests */,
 				DF2C45FB1BA9528C0093675F /* Products */,
@@ -117,6 +121,15 @@
 				DF2C46181BA9528C0093675F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF2C46231BA9538A0093675F /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				DF2C46241BA953AD0093675F /* UIImage+DYQRCodeEncoder.h */,
+				DF2C46251BA953AD0093675F /* UIImage+DYQRCodeEncoder.m */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				DF2C46061BA9528C0093675F /* ViewController.m in Sources */,
 				DF2C46031BA9528C0093675F /* AppDelegate.m in Sources */,
 				DF2C46001BA9528C0093675F /* main.m in Sources */,
+				DF2C46261BA953AD0093675F /* UIImage+DYQRCodeEncoder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
