@@ -2,7 +2,7 @@
 An iOS QRCode Image Encoder
 
 # Preview
-<img src="https://raw.github.com/Dwarven/QRCode-Encoder/master/Screenshots/demo.png" align="center" style="margin:10px">
+<img src="https://raw.github.com/Dwarven/QRCode-Encoder/master/Screenshots/demo.png" width="500" align="center" style="margin:10px">
 
 # How to use
 
