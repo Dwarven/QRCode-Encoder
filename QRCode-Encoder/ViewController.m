@@ -22,8 +22,8 @@
 
 - (IBAction)update:(id)sender {
     [self.view endEditing:YES];
-    //[_imageView setImage:[UIImage DY_QRCodeImageWithString:_textField.text size:(CGFloat)_textField.bounds.size.width]];
-    [_imageView setImage:[UIImage DY_QRCodeImageWithString:_textField.text size:(CGFloat)_textField.bounds.size.width color:[UIColor darkGrayColor]]];
+    //[_imageView setImage:[UIImage DY_QRCodeImageWithString:_textField.text size:_textField.bounds.size.width]];
+    [_imageView setImage:[UIImage DY_QRCodeImageWithString:_textField.text size:_textField.bounds.size.width color:[UIColor darkGrayColor]]];
 }
 
 - (void)didReceiveMemoryWarning {
