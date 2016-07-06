@@ -7,6 +7,8 @@
 
 An iOS QRCode Image Encoder
 
+ - Looking for an iOS QRCode Scanner and Decoder? Check this! [https://github.com/Dwarven/QRCode-Decoder]
+
 # Preview
 <img src="https://raw.github.com/Dwarven/QRCode-Encoder/master/Screenshots/demo.png" width="500" align="center" style="margin:10px">
 
